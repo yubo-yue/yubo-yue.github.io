@@ -9,8 +9,14 @@ categories: js, jquery
 
     如下两种方式相同
 {% highlight javascript linenos %}
-$(document).ready(function(){...}) ;
-$(function() {....});
+$(document).ready(function(){
+    console.log('hello');    
+}) ;
+//shorthand for the previous one
+$(function() {
+    console.log('hello');    
+});
+
 {% endhighlight %}
 
 ***
