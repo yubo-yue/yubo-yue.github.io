@@ -26,5 +26,41 @@ $("element").width();
    box-sizing: border-box; 
 }
 
-//setting box-sizing to border-box makes width and height calculations more intuitive by including padding and borders
 {% endhighlight %}
+
+>> Setting box-sizing to border-box makes width and height calculations more intuitive by including padding and borders
+
+***
+
+## JS&JQuery贴士三 CSS shorthand Properties
+
+{% highlight css %}
+//1, a value which is not specified is set to its initial value
+//2, only the individual properties values can inherit
+//3, shorthand properties try not to force a specific order for the values of the properties they replace.
+.border-props {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    // border : 1px solid #000;
+}
+
+.margin-props {
+    margin-top : 10px;
+    margin-right: 5px;
+    margin-bottom: 10px
+    margin-left: 5px;
+    // margin: 10px 5px 10px 5px
+}
+
+//rules for shorthand, TRouBLe(Top, Right, Bottom, Left)
+
+{% endhighlight %}
+>> 参考这篇文章 [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+
+***
+## JS&JQuery 贴士四
+
+
+***
+
