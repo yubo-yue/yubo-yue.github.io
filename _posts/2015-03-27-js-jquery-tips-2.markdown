@@ -54,13 +54,29 @@ $("element").width();
 }
 
 //rules for shorthand, TRouBLe(Top, Right, Bottom, Left)
-
+//1, always start at the top
+//2, go clockwise
+//3, if there is one value
+//4, if there is two value, the first one applies to the top. 
+//Then going clockwise, the next one applies to the right side.
+//The same two values are repeated in the same order as you continue going around the clock.
 {% endhighlight %}
 >> 参考这篇文章 [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
 ***
-## JS&JQuery 贴士四
+## JS&JQuery 贴士四 CSS padding and margin
 
+>> an important difference between padding and margin is that you can use negative values for margins. This mean that you can reduce the gap between elements or move an elment further to the left - the opposite of indenting.
+
+
+*** 
+
+## JS&JQuery 贴士五 Box Model's box-sizing
+
+- content-box : width and height apply only to the content box. this is the default.
+- padding-box : width and height include both content and padding.
+- border-box: width and height include content, padding and border.
 
 ***
+
 

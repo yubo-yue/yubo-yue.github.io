@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "CSS Tips [Beginning CSS 3]"
+date: 2015-03-30 12:08:13
+categories: js, jquery
+---
+
+## CSS3贴士一 center block element
+
+{% highlight css %}
+#centered
+{
+    background-color: #fff;
+    border: 2px solid #999
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+//to center the entire content of a web page, it is common to wrap everything inside the <body> in a <div>
+
+#wrapper 
+{
+    widht: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+{% endhighlight%}
+
+
