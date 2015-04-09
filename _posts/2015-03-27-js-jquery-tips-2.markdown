@@ -64,6 +64,7 @@ $("element").width();
 >> 参考这篇文章 [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
 
 ***
+
 ## JS&JQuery 贴士四 CSS padding and margin
 
 >> an important difference between padding and margin is that you can use negative values for margins. This mean that you can reduce the gap between elements or move an elment further to the left - the opposite of indenting.
