@@ -1,0 +1,171 @@
+---
+layout: post
+title:  "JS OO Tips"
+date: 2015-04-09 
+categories: js
+---
+
+> The principle of Object-Oriented Javascript by Nicholas C. Zakas
+
+## Js贴士一  Javascript Object's [[Put]] [[Get]]
+
+> When a property is first added to an object, Javascript use a internal method called [[Put]] on the object. 
+> The [[Put]] method creates a spot in the object to store the property. 
+> The result of [[Put]] method is the creation of an own property on the object. 
+
+> When a new value is assigned to an existing property, a seperate operations called [[Set]] takes place. 
+
+{% highlight javascript %}
+
+var person1 = {
+    name: 'Yubo'   
+};
+
+var person2 = new Object();
+person2.name = 'Yubo';
+
+
+{% endhighlight %}
+
+> Property of object has its own attributes.
+***
+
+## Js贴士二 检查property在对象上是否存在的正确方法in and hasOwnProperty
+
+>> object has two types of properties, own property and prototype property.
+
+{% highlight javascript %}
+
+var person1 = {
+    name: 'Yubo'   
+    sayName: function() {
+     console.log(this.name);
+    }
+};
+
+console.log("name" in person1); //output is "true"
+console.log("toString" in person1); //"true"
+console.log(person1.hasOwnProperty("toString")); //"false"
+
+{% endhighlight %}
+
+## Js贴士三 删除Property 
+
+> delete operator, internally internal method [[Delete]] takes place. 
+{% highlight javascript %}
+ var person1 = {
+    name: 'Yubo'   
+    sayName: function() {
+     console.log(this.name);
+    }
+};
+
+delete person1.name;
+console.log("name" in person1); //"false"
+   
+{% endhighlight %}
+
+## Js贴士四 Object's Property's Attributes
+
+-Enumeration
+
+> By default, all new added properties are enumerable, which can be iterated by for...in 
+> Internally, enumerable property has its internal [[Enumerable]] attributes set to "true".
+> Difference between for...in and Object.keys() function - for...in loop also enumerates properties of prototype, while Object.keys() returns only own properties which Enumerable.
+
+{% highlight javascript %}
+
+var person1 = {
+    name: 'Yubo'   
+    sayName: function() {
+     console.log(this.name);
+    }
+};
+
+// get all enumerable properties of object by Object.keys() (introduced in ECMAScript 5)
+var properties = Object.keys(person1);
+var i, len;
+for (i = 0, len = properties.length; i < len; i++) {
+    console.log("name:" + properties[i]);
+    console.log("value:" + person1[properties[i]]);
+}
+   
+{% endhighlight %}
+
+
+## Js贴士五 Types of Properties
+
+> Data properties and accessor propertis
+> Data propertis cantain a value. The default behavior of [[Put]] is to create a data property.
+
+> Accessor properties don't contain a value but define a function to call when the property is read, and a function to call when the property is written.
+
+{% highlight javascript %}
+
+var person1 = {
+    _name: 'Yubo',
+
+    get name() {
+        console.log('Reading name');
+        return this._name;
+    }
+
+    set name(value) {
+        console.log('Setting value to %s', value);
+        this._name = value;
+    }
+
+};
+
+console.log(person1.name);
+
+person1.name = 'Greg';
+console.log(person1.name);
+   
+{% endhighlight %}
+
+
+## Js贴士六 Property Attributes
+
+
+{% highlight javascript %}
+var person1 = { name: 'Nicolas' }
+
+Object.defineProperty(person1, "name", {enumerable: false}); //internal attr [[Enumerable]]
+
+console.log("name" in person1)// true
+console.log (person1.propertyIsEnumerable("name")); //false
+
+var properties = Object.keys(person1);
+console.log(properties.length); // 0
+
+Object.defineProperty (person1, "name", {configurable: false});//Internal attr is [[Configurable]]
+//try to delete name property
+delete person1.name;
+console.log("name" in person1); //true
+console.log(person1.name); // 'Nicolas'
+
+
+Object.defineProperty(person1, "name", {configurable: true}); //error, can't make nonconfigurable property be configurable again.
+{% endhighlight %}
+
+### Data Property Attributes
+
+>> [[Value]] [[Writable]] only data property has such attributes.
+
+{% highlight javascript %}
+var person1 = {};
+
+Object.defineProperty(person1, "name", {
+    value : "Nicholas"    
+})
+
+console.log('name' in person1); //true
+console.log(person1.propertyIsEnumerable("name"));//false
+
+delete person1.name;
+console.log("name" in person1); //true
+{% endhighlight %}
+
+>> when define a new property with Object.defineProperty(), it is important to specify all of the attributes because Boolean attributes automatically defautl to false otherwise.
+
