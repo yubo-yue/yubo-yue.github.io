@@ -167,5 +167,70 @@ delete person1.name;
 console.log("name" in person1); //true
 {% endhighlight %}
 
->> when define a new property with Object.defineProperty(), it is important to specify all of the attributes because Boolean attributes automatically defautl to false otherwise.
+> when define a new property with Object.defineProperty(), it is important to specify all of the attributes because Boolean attributes automatically defautl to false otherwise.
 
+### Retrieve Property Attributes
+
+
+
+{% highlight javascript %}
+var person1 = {name: 'Nicolas'};
+
+var descriptor = Object.getOwnPropertyDescriptor(person1, "name");
+
+console.log(descriptor.enumerable);
+console.log(descriptor.configurable);
+console.log(descriptor.wriable);
+console.log(descriptor.value);
+{% endhighlight %}
+
+## JS贴士七 Preventing Object Modification
+
+### Extensible
+> like properties, Object have internal attribute that govern their behavior.
+> [[Extensible]],which is boolean value indicating if the object itself can be modified. All objects are extensible by default.
+
+{% highlight javascript %}
+var person1 = {name: 'Nicolas'};
+console.log(Object.isExtensible(person1)); //true
+
+Object.preventExtensions(person1);
+console.log(Object.isExtensible(person1)); //false
+
+person1.sayName = function (){};
+
+console.log("sayName" in person1); //false
+
+{% endhighlight %}
+
+
+### Sealed Object
+
+>> Sealed object are NONEXTENSIBLE, and all of its properties are NON-CONFIGURABLE.
+
+{% highlight javascript %}
+var person1 = {name: 'Nicolas'};
+console.log(Object.isExtensible(person1)); //true
+console.log(Object.isSealed(person1)); //false
+
+Object.seal(person1);
+
+console.log(Object.isExtensible(person1)); //false
+console.log(Object.isSealed(person1)); //true
+
+
+person1.sayName = function (){};
+
+console.log("sayName" in person1); //false
+
+{% endhighlight %}
+
+### Freezing Object
+
+{% highlight javascript %}
+
+var person1 = {name: 'Nicolas'};
+
+Object.freeze(person1);
+Object.isFrozen(person1);
+{% endhighlight %}

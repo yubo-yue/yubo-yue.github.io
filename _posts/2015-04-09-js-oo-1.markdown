@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "JS OO Tips - 1"
+date: 2015-04-09 
+categories: js
+---
+
+> The principle of Object-Oriented Javascript by Nicholas C. Zakas
+
+## Js贴士一  Function 
+
+> 在Javascript里面， Function也是对象，他和其它对象不同的地方是，Function对象有[[Call]] internal property.
+> Typeof operator正是通过[[Call]]来判断当前对象是Function Object还是其它Object。
+
+## Js贴士二 Declaration VS Expression
+
+{% highlight javascript %}
+//declaration
+function func(param)
+{
+}
+//expression
+var func = function(param)
+{
+}
+{% endscript%}
+
+> Function declarations are hoisted to the top of the context(either the function in which the declaration occurs or the global scope) when the code is executed.
+
+## Js贴士三 Paramter
+
+ 在Javascript里，你可以为你的函数传递任意数目的参数而不会发生错误。
+
+>> 所有参数会被保存在一个类数组一样的结构里面 arguments(不是数组)
+{% highlight javascript %}
+function f()
+{
+    Array.isArray(this.arguments) ;//always return false.
+}
+{% endscript %}
+
+***
+
+## Js贴士四 Constructors
+
+{% highlight javascript %}
+function Programmer()
+{
+}
+
+var player = new Programmer();
+
+//what happens when new used.
+//1, each object instance is automatically created with a constructor property which is reference to constructor function that created it.
+
+console.log(player.constructor === Programmer); // true
+
+{% endscript %}
+
+
+
