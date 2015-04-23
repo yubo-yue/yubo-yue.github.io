@@ -7,7 +7,7 @@ categories: js
 
 > The principle of Object-Oriented Javascript by Nicholas C. Zakas
 
-## Js贴士一  Javascript Object's [[Put]] [[Get]]
+## Js贴士一  Javascript Object's "Put" "Get"
 
 > When a property is first added to an object, Javascript use a internal method called [[Put]] on the object. 
 > The [[Put]] method creates a spot in the object to store the property. 
@@ -151,7 +151,7 @@ Object.defineProperty(person1, "name", {configurable: true}); //error, can't mak
 
 ### Data Property Attributes
 
->> [[Value]] [[Writable]] only data property has such attributes.
+>  "Value" "Writable" only data property has such attributes.
 
 {% highlight javascript %}
 var person1 = {};

@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "REST Notes"
+date: 2015-04-15 11:50:13
+categories: REST RESTFul Webservice
+---
+
+## stpes toward to Glory of REST
+> 原文 (Steps toward the glory of  REST)[http://martinfowler.com/articles/richardsonMaturityModel.html]
+
+Leonard Richardson创建了一个model，将REST方法的主要元素分成了三个步骤：资源（resources），HTTP Verbs和 hypermedia control 。
+
+
+

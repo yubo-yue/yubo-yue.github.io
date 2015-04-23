@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "POSA v1 Notes"
+date: 2015-04-16 11:50:13
+categories: Architecture Pattern POSA
+---
+
+## What Makes a Pattern
+
+* Context
+
+ Design situation giving rise to a design problem
+ 
+* Problem
+
+Set of forces repeatedly arising in the context
+  
+* Solution
+
+-Configuration to balance the forces
+
+-Structure with components and relationship
+
+-Runtime behaviors
+
+### Observer or Pub-Sub , a vivid example
+
+- Context 一个组件使用另外一个组件提供的数据或信息
+- Problem 修改一个组件的内部状态可能会引起互相关联的组件之间状态不一致。要保证或着在不一致的情况下恢复一致性，需要一种机制来保证。
+- Solution 提供一种Modification-Propagation的机制（在提供者和消费者之间）。
+
+## Pattern Categories
+
+* Architecture patterns
+
+* Design patterns
+
+* Idioms - 多数的Idioms是实现语言相关的
