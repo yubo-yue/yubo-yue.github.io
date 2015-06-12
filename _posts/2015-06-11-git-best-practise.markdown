@@ -30,4 +30,4 @@ git diff master..bug/pr-1
 
 # searches the past 20 commits to the master branch for changes containing string
 git diff -S"string" master~20
-{% endhighlight%}
+{% endhighlight %}
