@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "POSA v4 Notes"
+date: 2015-05-08 11:50:13
+categories: Architecture Pattern POSA
+---
