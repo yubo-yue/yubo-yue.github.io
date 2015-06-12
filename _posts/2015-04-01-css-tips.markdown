@@ -26,6 +26,6 @@ categories: js, jquery
     margin: 0 auto;
 }
 
-{% endhighlight%}
+{% endhighlight %}
 
 
