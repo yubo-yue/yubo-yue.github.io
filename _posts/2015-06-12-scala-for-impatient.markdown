@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title:  "Scala for Impatient"
 date: 2015-06-12 12:08:13
