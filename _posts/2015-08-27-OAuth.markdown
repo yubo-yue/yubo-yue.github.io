@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "OAuth Workflow"
+date: 2015-08-27 17:50:13
+categories: OAuth
+---
+
+## OAuth 背景
+
+OAuth类似于网站的Valet Key。 每辆车会有一把Valet Key，当车主开车到达目的地后，会将钥匙给待泊车的服务人员，这把钥匙就是Valet Key. 通常Valet Key不是普通的钥匙，使用它开车只能开1，2公里，同时它的没有其他的权限，比如打开车载电话薄。
+OAuth背后的概念和它一样，你运行其他人（应用程序）来访问你的资源，哪些资源可以访问由你给出的Valet key来决定。 
+
+## 术语
+
+- Token: A string of hashed data given to you as a unique ID to identify your application, and the user trying to use your application by the Service Provider.
+
+- Request Token: token 消费者在authenticate之前从service provider获取的token， 接下来consumer 会拿着这个token 到service provider处authenticate，如果成功, service 
+provider 会创建一个access token来标示该消费者，并将该access token返回给消费者
+
+- 
+## 参考资料
+
+1. http://www.codeproject.com/Articles/131978/Demystifying-OAuth

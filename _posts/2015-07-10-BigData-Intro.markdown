@@ -11,11 +11,13 @@ categories: BigData
 - Storage Layer
 
 
-{% highlight %}
+{% highlight bash %}
+
 Spark Streaming | BlinkDB <- SharkSQL | GraphX | MLBase <- MLlib
 Spark
 Mesos
 Tachon <- HDFS, S3
+
 {% endhighlight %}
 
 ## Hadoop Stack

@@ -14,7 +14,7 @@ categories: GOLANG COOKBOOK
 ## range
 range iterate over of elements in a variety of data struture.
 
-{% highlight golang %}
+{% highlight c %}
 
 for i, c := range "go" {
     fmt.Println(i, c)    
@@ -25,7 +25,7 @@ for i, c := range "go" {
 
 ## mulitple line string in GO
 
-{% highlight golang %}
+{% highlight bash %}
 
 `
 line1

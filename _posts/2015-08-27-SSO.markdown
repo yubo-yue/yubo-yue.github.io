@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "SSO Workflow"
+date: 2015-08-27 17:50:13
+categories: SSO
+---
+
+## 解决方案
+
+通过查阅，有如下几种开源解决方案
+
+### CAS
+
+- http://jasig.github.io/cas/4.1.x/planning/Installation-Requirements.html
+
+* Install with JDK 8.0
+
+
+
+
+### JOSSO
+
+
+## 有用的资源
+1. JWT (JSON Web Token)
+2. OpenID
+3. http://www.slideshare.net/craigsdickson/fast-and-free-sso-a-survey-of-open-source-solutions-to-single-sign-on?qid=43f99d38-21e8-4e6d-a0af-b892fee2217a&v=qf1&b=&from_search=2
+4. http://www.codeproject.com/Articles/106439/Single-Sign-On-SSO-for-cross-domain-ASP-NET-applic

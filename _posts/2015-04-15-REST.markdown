@@ -1,14 +1,74 @@
 ---
 layout: post
-title:  "REST Notes"
-date: 2015-04-15 11:50:13
+title:  "使用RESTFul API 设计最佳实践"
+date: 2015-08-27 11:50:13
 categories: REST RESTFul Webservice
 ---
 
-## stpes toward to Glory of REST
-> 原文 (Steps toward the glory of  REST)[http://martinfowler.com/articles/richardsonMaturityModel.html]
+原文 - (Best Practices for a Pragmatic RESTFul API)[http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api]
 
-Leonard Richardson创建了一个model，将REST方法的主要元素分成了三个步骤：资源（resources），HTTP Verbs和 hypermedia control 。
+## 开始
+- API 用户是开发人员，所以设计让人愉悦的API
+- 使用RESTFul URL和Action
+- 使用SSL，没有例外
+
+## API的关键需求
+网上大多数关于API的设计的意见和准则过于学术，本文的目标是描述符为当今Web Application而设计的使用API最佳实践。 如下是设计一个实用、优秀的API必须要满足的几个条件：
+
+* 实用合理的Web standard
+* 他说程序员友好的，并且可以通过浏览器访问的
+* 他是简单的、直观的、一直的并且采用之后的体验不仅仅简单，而且是令人愉悦的
+* 权衡其他需求之后，他是高效的
+
+## 使用RESTFul Urls和Action
+REST关键设计准则包含根据逻辑资源来划分你的API。并且通过HTTP REQUEST对资源进行操作，使用HTTP的方法GET, DELETE, PUT 和 POST，每个HTTP Method都有它自己的语义。
+但是什么是资源，如何找出资源？ 首先，资源必须是名词，从资源消费者的角度考虑问题，这是合理的。Enchant项目里面的名词中包括tickets,user和group
+
+当你定义了资源以后，你接下来要考虑有什么样操作来操作资源，已经如何将这些操作映射到你得API上去， RESTFul原则提供了CRUD操作映射的机制：
+- GET /tickets
+- GET /tickets/12
+- POST /tickets
+- PUT /tickets/12
+- PATCH /tickets/12
+- DELETE /tickets/12
+
+可以看出，REST的好处在于你只用一个endpoint /tickets来实现所有重要的功能。没有所谓的命名规则，API url简单并且干净。
+
+### Endpoint的名字用单数还是复数
+再次使用KISS规则。endpoint名词使用复数，尽管从语法角度来看有些奇怪，但是从实用角度来看，统一使用复数作为endpoint好处是，统一风格，简单。
+
+### 如何处理关系
+如果关系存在于资源之中，如果tickets里面包含一个多个messages, messages 可以被映射到/tickets/ endpoint 上去.
+
+- GET /tickets/12/messages
+- GET /tickets/12/messages/2
+
+GET , PUT, POST, DELETE /countrys/CN/citys/Beijing
+
+如果关系和资源是独立关系，则将其表示为一个单独ID。
+
+### 如果CRUD 操作无法表示的ACTION，如何处理
+这里有如下方法
+- 如果Action不需要参数，可以将它表示成resource的一个field。 Activate Action 可以被表示成resource的一个bool 字段，用PATCH来更新这个字段
+- 把Action当成一个子Resource. 如Github STAR action. PUT /gists/:id/star , DELETE /gist/:id/star
+- 有些情况下，无法将Action映射到某个resource endpoint上，如multi-resource 查询。这时，/search 是一个很好的选择，尽管他不是一个资源。从你得API使用者角度考虑什么是对的，同时，提供详细准确的文档避免混淆。
+
+## Always use SSL
+
+## 
+
+## Design RESTFul APIs
+
+- Keep the simple things simple & each resource only has two URLs, one for collection and one for single element
+
+/dogs
+/dogs/:dogname
+
+
+
+## 参考
+* (Steps toward the glory of  REST)[http://martinfowler.com/articles/richardsonMaturityModel.html] - Leonard Richardson创建了一个model，将REST方法的主要元素分成了三个步骤：资源（resources），HTTP Verbs和 hypermedia control 。
+* 
 
 
 
