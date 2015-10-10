@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Docker"
+date: 2015-09-30 12:16:13
+categories: Docker
+---
+## Overview
+- OSX docker toolbox
+- Docker Hub
+
+## command
+
+{% highlight bash %}
+docker ps -a
+docker ps -l
+docker run -t -i yueyu/static_web --name static_web nginx -g "daemon off;"
+docker build -t="yueyu/static_web" .
+docker-machine active
+docker-machine ip
+
+
+docker login
+
+docker push yueyu/static_web
+{% endhighlight %}

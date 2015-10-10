@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "MongoDB Sharding"
+date: 2015-10-10 13:16:13
+categories: MongoDB
+---
+
+## Overview
+
+## Why Sharding
+
+- All writes go to master
+- Latency sensitive queries always go to master
+- Single replica set has limitation of 12 nodes
+- Memory can't big enough when active set is big
+- local disk is not big enough
+- vertical upgrade is too expensive
+
+## Architecture
+{{ site.url }}/assets/mongo-sharding-arch.jpg
+

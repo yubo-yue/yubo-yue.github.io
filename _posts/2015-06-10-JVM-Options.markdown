@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JVM Options"
+title:  "JVM Options, Performance Optimization"
 date: 2015-05-08 11:50:13
 categories: Architecture Pattern POSA
 ---
@@ -72,5 +72,11 @@ categories: Architecture Pattern POSA
 ### Make GC right
 
 ### Runtime Compiler
+
+### Tools
+- App Dynamics, New Relic
+- Jps, Jstat VisualVM
+- jClarity
+- Gatling
 
 

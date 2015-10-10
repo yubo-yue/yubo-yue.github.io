@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "REDIS"
+date: 2015-09-18 13:16:13
+categories: REDIS
+---
+
+## REDIS
+REMOTE DICTIONARY SERVER
+
+    Memory is the new disk, disk is the new tape. - Jim Gray
+
+##
