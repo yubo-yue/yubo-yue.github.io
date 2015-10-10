@@ -17,5 +17,5 @@ categories: MongoDB
 - vertical upgrade is too expensive
 
 ## Architecture
-{{ site.url }}/assets/mongo-sharding-arch.jpg
+![Mongo Sharding Architecture]({{ site.url }}/assets/mongo-sharding-arch.jpg)
 
