@@ -23,6 +23,7 @@ categories: Architecture Pattern POSA
         -Dsun.net.inetaddr.ttl=<TTL in seconds>
         -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=<path to dump>`date`.hprof
         -Djava.rmi.server.hostname=<external IP>
+        -Dcom.sun.management.jmxremote.local.only=false
         -Dcom.sun.management.jmxremote.port=<port> 
         -Dcom.sun.management.jmxremote.authenticate=false 
         -Dcom.sun.management.jmxremote.ssl=false
@@ -44,6 +45,7 @@ categories: Architecture Pattern POSA
         -Djava.rmi.server.hostname=<external IP>
         -Dcom.sun.management.jmxremote.port=<port> 
         -Dcom.sun.management.jmxremote.authenticate=false 
+        -Dcom.sun.management.jmxremote.local.only=false
         -Dcom.sun.management.jmxremote.ssl=false
 
 ## Target
@@ -78,5 +80,31 @@ categories: Architecture Pattern POSA
 - Jps, Jstat VisualVM
 - jClarity
 - Gatling
+
+## Tools
+生成Heap Dump文件
+
+## case - throughput prefer
+
+nohup java \
+-server \
+-Xms6144m \
+-Xmx6144m \
+-XX:NewSize=2048m \
+-XX:MaxNewSize=3072m \
+-XX:+HeapDumpOnOutOfMemoryError \
+-XX:+UseParallelOldGC \
+-verbose:gc \
+-XX:+PrintGCDetails \
+-Xloggc:"/home/scripts/jvm-gc.log" \
+-Djava.rmi.server.hostname=182.92.68.193 \
+-Dcom.sun.management.jmxremote.port=9193 \
+-Dcom.sun.management.jmxremote.authenticate=false \
+-Dcom.sun.management.jmxremote.ssl=false \
+-Dcom.sun.management.jmxremote.local.only=false \
+-jar datareceiver.jar &
+
+
+  
 
 

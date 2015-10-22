@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "NoSQL"
+date: 2015-10-14 13:16:13
+categories: nosql
+---
+
+## Consistency
+
+- ACID Consistency
+- Eventual Consistency
+
+    In ACID, it means that the database is always in a consistent state. 
+    In CAP, it means that a single copy of the data has been updated.
+
+
+
