@@ -4,12 +4,17 @@ title:  "JVM"
 date: 2015-09-18 13:16:13
 categories: JVM Performance tuning
 ---
-
 ## Overview
 JVM performance tunig
 
 - JRE = JVM + JAVA API
 - JVM = class loader, byte code verifier, GC, security Mgr, execution engine, JIT code generator
+
+## Cheetsheet & reference
+1. HotSpot-JVM-GC-options cheatsheet
+http://blog.ragozin.info/2013/11/hotspot-jvm-garbage-collection-options.html
+2. http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html
+3. http://www.cubrid.org/blog/dev-platform/how-to-tune-java-garbage-collection/
 
 ## Tunig
 - Memory tuning
