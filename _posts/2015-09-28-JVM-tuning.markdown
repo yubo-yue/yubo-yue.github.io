@@ -13,6 +13,7 @@ JVM performance tunig
 ## Cheetsheet & reference
 1. HotSpot-JVM-GC-options cheatsheet
 http://blog.ragozin.info/2013/11/hotspot-jvm-garbage-collection-options.html
+ ({{ site.url }}/assets/mongo-sharding-arch.jpg)
 2. http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html
 3. http://www.cubrid.org/blog/dev-platform/how-to-tune-java-garbage-collection/
 
