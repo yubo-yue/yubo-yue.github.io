@@ -1,5 +1,5 @@
 # Site settings
-title: 大宝的Daddy 
+title: 宝爸的轻博客
 email: yubo.yue@163.com
 description: "Keep looking, Don't settled"
 baseurl: ""
@@ -10,8 +10,5 @@ markdown: kramdown
 permalink: pretty
 
 
-#markdown processor
-redcarpet: 
-extensions: ["no_intra_emphasis", "no_fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
-
-
+kramdown:
+  input: GFM
