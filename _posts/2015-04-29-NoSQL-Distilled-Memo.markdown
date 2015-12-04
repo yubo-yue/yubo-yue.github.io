@@ -11,7 +11,43 @@ categories: NoSQL
 2. Cassandra
 
 
-## What is nosql ?
+## Where nosql come from?
+The term nosql is coming from a twitter #NoSQL.
+
+## Overview
+
+Get this from Martin Fowler's presentation
+
+### Data Model
+1. Key value
+2. Column-family
+3. Document
+4. graph.
+
+Introduced by Martin Fowler, can be further abstracted to Aggregate and Graph.
+
+### Consistency
+
+1. ACID
+2. BASE
+
+### Future
+
+Ployglot :
+1. user session -> redis
+2. product catalog -> mongodb
+3. financial -> RDBMS
+4. ...
+
+### CAP
+With distribute system, actually we leveraged between C and A. And for how to choose between C and A, it is usually business decision. 
+
+And for Availability, actually we more care about Response Time. 
+
+### When and Why choose NoSQL
+1. Easier development
+2. Big volume of data.
+
 
 ## Which aspects need to be considered when choosing NoSQL technologies?
 
