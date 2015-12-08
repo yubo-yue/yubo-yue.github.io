@@ -6,7 +6,7 @@ categories: Git Best Practise
 ---
 
 
-## Git best practise tips - 1
+## Common Commands
 
 {% highlight bash %}
 
@@ -18,10 +18,10 @@ git branch -b new_branch_name commit
 git branch
 git show-branch
 
+// delete branch
 git branch -d branch_name
 
 //diff
-
 //between working directory and index
 git diff
 
@@ -30,7 +30,7 @@ git diff --cached
 
 //below two commands are same
 git diff master bug/pr-1
-git diff master..bug/pr-1
+git diff master ..bug/pr-1
 
 //searches the past 20 commits to the master branch for changes containing string
 git diff -S"string" master~20

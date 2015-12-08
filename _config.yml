@@ -5,10 +5,20 @@ description: "Keep looking, Don't settled"
 baseurl: ""
 url: "http://yubo-yue.github.io"
 
+
+#paginate: 20
+future: true
+
+port: 4004
+
+#highlight code syntax
+#highlighter: pygments
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-
 kramdown:
   input: GFM
+
+#gems: [jekyll-paginate]
