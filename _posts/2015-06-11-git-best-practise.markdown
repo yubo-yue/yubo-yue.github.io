@@ -112,6 +112,44 @@ git checkout -b [branchname] [tagname]
 
 {% endhighlight %}
 
+## Git branch
+
+{% highlight bash %}
+
+git branch
+git branch -v // see last commit on each branches
+
+git branch --merged // filter which branches already mereged into currently branch on.
+git branch --no-merged // filter which branches has not been merged into current branch on.
+
+
+//Remote branch
+git remote show (remote)
+
+git remote add (remote) (url) // add new remote (remote)
+
+git fetch (remote)
+
+git push (remote) (branch)
+
+$ git checkout --track origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+
+// To set up a local branch with a different name than the remote branch, you can easily use the first version with a different local branch name:
+git checkout -b new_name (remote/branch)
+
+//If you already have a local branch and want to set it to a remote branch you just pulled down, or want to change the upstream branch you’re tracking, you can use the -u or --set-upstream-to option to git branch to explicitly set it at any time.
+git branch -u (remote/branch)
+
+//delete remote branch
+$ git push origin --delete serverfix
+To https://github.com/schacon/simplegit
+ - [deleted]         serverfix
+
+{% endhighlight %}
+
+
 ## Git config
 
 Git comes with a tool called git config that lets you get and set configuration variables that control all aspects of how Git looks and operates. These variables can be stored in three different places:
