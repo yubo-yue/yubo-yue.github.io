@@ -5,8 +5,6 @@ date: 2015-06-11 11:50:13
 categories: Git Best Practise
 ---
 
-##
-
 ## Useful URLS
 1. http://sethrobertson.github.io/GitBestPractices
 
@@ -106,6 +104,16 @@ git tag -a 'v1.0' -m 'version 1.0' // create v1.0 annotation tag.
 git show v1.0 // show the details of tag v1.0
 
 
+git tag -a 'v0.9' 18eead0 -m 'tag on history commit' // tag on history commit
+
+//sharing tag
+git push origin [tagname]
+git push origin v1.0
+
+
+//checkout tags
+git checkout -b [branchname] [tagname]
+
 {% endhighlight %}
 
 ## Git config
@@ -144,12 +152,22 @@ git config --global user.email johndoe@example.com
 	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
     co = checkout
     st = status
+    br = branch
+    ci = commit
+
+    unstage = reset HEAD --
 [amazon]
 	append-cr-url = true
 	pull-request-by-default = true
+[diff]
+    #tool = opendiff
+    tool = sourcetree
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+    #cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\"
+
+[merge]
+    tool = sourcetree
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
