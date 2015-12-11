@@ -36,9 +36,6 @@ git diff master ..bug/pr-1
 //searches the past 20 commits to the master branch for changes containing string
 git diff -S"string" master~20
 
-
-
-
 // remove
 git rm aaa
 
@@ -46,7 +43,6 @@ git rm --cached aaa //remove add from stage area, keep it in local work dir.
 
 // moving file
 git mv aaa bbb 
-
 
 {% endhighlight %}
 
