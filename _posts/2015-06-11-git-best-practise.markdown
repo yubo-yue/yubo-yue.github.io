@@ -147,8 +147,22 @@ $ git push origin --delete serverfix
 To https://github.com/schacon/simplegit
  - [deleted]         serverfix
 
+
 {% endhighlight %}
 
+## Git rebasing
+
+{% highlight bash %}
+
+$ git checkout experiment
+$ git rebase master
+
+git rebase master topic = git checkout topic, then git rebase master
+
+// onto
+git rebase --onto master server client
+
+{% endhighlight %}
 
 ## Git config
 
