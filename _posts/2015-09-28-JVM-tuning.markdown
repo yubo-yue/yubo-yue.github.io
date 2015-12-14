@@ -25,7 +25,7 @@ http://blog.ragozin.info/2013/11/hotspot-jvm-garbage-collection-options.html
 - I/O tuning 
 
 ### Areas of memory performance tuning
-- memory footprint tuning
+- Memory footprint tuning
 
     So u get OOM 
     1 may be you just have too much data
@@ -56,3 +56,79 @@ Do u need all data in memory? consider using: 1. a LRU cache 2. soft reference
 - others : in-process locking, thread scheduling; IO; application algorithmic ineffiencies
 
 
+## Find which thread in JAVA jvm use the most cpu resource
+
+```bash
+//find which java process , which thread in java process use the most cpu resources.
+ps -ef -M //this is for mac, need check when play with RHEL or other linux distributions, JVM versions.
+
+// find where code is consuming a lot cpu resource, thru the TID find be previous cmd.
+jstack pid
+
+```
+
+## Diagnosing Tools
+
+- jcmd
+
+```bash
+//All Java process's uptime
+jcmd 0 VM.uptime
+
+jcmd pid VM.command_line
+
+//Show available configurations
+jcmd pid help
+
+jcmd pid Thread.print //same as jstack pid
+
+//print counter
+jcmd 5580 PerfCounter.print
+
+```
+
+- jps
+
+```bash
+
+jps -v //output includes arguments passed to main function
+jps -m //output includes arguments passed to JVM
+
+```
+
+- jstack
+
+jstack  prints  Java  stack traces of Java threads for a given Java process or core file or a remote debug server. For each Java frame, the full class name, method name, 'bci' (byte code index) and line number, if available, are printed. With the -m option, jstack prints both  Java  and native frames of all threads along with the 'pc' (program counter). For each native frame, the closest native symbol to 'pc', if available, is printed. C++ mangled names are not demangled. To demangle C++ names, the output of this command may be piped to c++filt.
+
+```
+jstack pid
+jstack -h
+```
+
+
+- jstat
+
+```bash
+
+jstat -gcnew pid // ask for gc new data for pid {pid}
+
+// each 1s, show JIT compilation for 5580
+jstat -printcompilation 5580 1s
+
+jstat -options
+	-class
+	-compiler
+	-gc
+	-gccapacity
+	-gccause
+	-gcmetacapacity
+	-gcnew
+	-gcnewcapacity
+	-gcold
+	-gcoldcapacity
+	-gcutil
+	-printcompilation
+
+
+
+```
