@@ -8,7 +8,7 @@ categories: JVM
 ## Reference
 
 1. blog.sokolenko.me/2014/11/javavm-options-production.html
-2. http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html
+2. http://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/index.html
 3. https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr001.html#BABCBIDC
 
 ## JVM < 8 Reference VM Paramters

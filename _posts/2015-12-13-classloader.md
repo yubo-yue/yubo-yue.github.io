@@ -30,7 +30,7 @@ java.lang.Class klass = Myclass.class;
 
 - Except Bootstrap Class Loader, everyone has a parent Class Loader.
 
-({{ site.url }}/assets/classloader.png)
+![ClassLoader class diagram]({{ site.url }}/assets/classloader.png)
 
 
 ## References
