@@ -5,7 +5,15 @@ date: 2015-03-27 11:50:13
 categories: progress following
 ---
 
-## Booking reading
+## [2016]
+
+- Applying UML and Patterns by Craig Larman.
+
+- Patterns of Enterprise Application Architecture (PoEAA) by Martin Fowler.
+
+- Refactoring: A technique for improving  the design of an existing code base by Martin Fowler
+
+## [2015]
 
 - Professional Javascript for Web Developer (by Nicholas C. Zakas)
 
@@ -21,7 +29,7 @@ categories: progress following
 
 - The principle of Object-Oriented Javascript by Nicholas C. Zakas (Amazon.com)
 
-[2015-4-9] 这是最近读的Nicholas写的关于Javascript的第二本书。总体感觉依然是语言清晰，准确。本书的结构很清楚，详细深入而又简单易懂。
+## [2015-4-9] 这是最近读的Nicholas写的关于Javascript的第二本书。总体感觉依然是语言清晰，准确。本书的结构很清楚，详细深入而又简单易懂。
 本书是对于深刻理解Javascript语言本身及其关键特性不可多得的好书。
 
 
