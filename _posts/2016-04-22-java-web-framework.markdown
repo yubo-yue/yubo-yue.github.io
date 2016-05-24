@@ -26,4 +26,32 @@ For dependencis, as the name explains itself, but there are different types of d
 - test dependencies
 - indirect depenedencis 
 
-##
+## Domain Models, Data Models & Tools
+
+The first imporatant thing when implements your business logic is how to scope and understand your domain realm. The you need to extract the domain models and shape them into well forms. This is the prerequisite for the next steps, define your data model. 
+
+Actually, in real world, it is hard to implement a 1 to 1 mapping between domain object to data object(persistence layer). 
+
+So there is another concern on how to organize your domain logic and map them to data model in your persistence layer. Mostly used one may be the data mapper which very suitable for case that domain logic is based on domain model.
+
+May not very exact, per my shallow understanding, the MyBatis, Hibernate(it should be more than the data mapper functionalities) are all good framework which reduct huge words on defining your own data mapper layer. 
+
+
+## Connection Pool 
+
+There are a lot of options currently, DBCP, C3P0, HikariCP and  Tomcat JDBC Connection Pool and others i can't remember the name... For which one is better, i don't think there is a clear answer here, may best way is test it under your scenario if you really concern about the difference, otherwise, i prefer to C3P0 because it already by Amazon for a few years and tested many times.
+
+## Metrics, Monitors
+
+### JMX
+
+## Tiers vs Layers
+
+Logical layers are merely a way of organizing your code. Typical layers include Presentation, Business and Data – the same as the traditional 3-tier model. But when we’re talking about layers, we’re only talking about logical organization of code. In no way is it implied that these layers might run on different computers or in different processes on a single computer or even in a single process on a single computer. All we are doing is discussing a way of organizing a code into a set of layers defined by specific function.
+
+Physical tiers however, are only about where the code runs. Specifically, tiers are places where layers are deployed and where layers run. In other words, tiers are the physical deployment of layers.
+
+
+
+
+

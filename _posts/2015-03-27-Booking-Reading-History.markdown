@@ -7,11 +7,25 @@ categories: progress following
 
 ## [2016]
 
-- Applying UML and Patterns by Craig Larman.
+### Patterns and OODA
 
 - Patterns of Enterprise Application Architecture (PoEAA) by Martin Fowler.
 
 - Refactoring: A technique for improving  the design of an existing code base by Martin Fowler
+
+- Core J2EE Patterns: Best Practices and Design Strategies by Deepak Alur, John Crupi
+
+- Enterprise Integration Patterns
+
+- Scalabilities Rules 50 principles for scalable web sites.
+
+- Applying UML and Patterns by Craig Larman.
+
+### Distribution System
+
+Read this first https://dancres.github.io/Pages/
+
+
 
 ## [2015]
 
