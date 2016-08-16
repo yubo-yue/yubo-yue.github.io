@@ -21,9 +21,29 @@ categories: progress following
 
 - Applying UML and Patterns by Craig Larman.
 
+- Implementation Patterns by Kent Beck
+
+- Clean Code & Clean Coder by Robert C Martin
+
+- Agile Software Development, Principles, Patterns and Practices by Robert C Martin
+
+- Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock, Alan McKean)
+
+#### Papers
+- F. Brooks: No Silver Bullet - Essense and accident in software engineering (1986) ， and yes, it is foreteller and it is philosophy. 
+
 ### Distribution System
 
 Read this first https://dancres.github.io/Pages/
+
+### Transaction & Distributed Transaction
+
+### Web Blog resources
+- https://8thlight.com/blog/uncle-bob/
+
+
+
+
 
 
 
