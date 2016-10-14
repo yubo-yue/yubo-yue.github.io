@@ -42,11 +42,6 @@ Read this first https://dancres.github.io/Pages/
 - https://8thlight.com/blog/uncle-bob/
 
 
-
-
-
-
-
 ## [2015]
 
 - Professional Javascript for Web Developer (by Nicholas C. Zakas)
