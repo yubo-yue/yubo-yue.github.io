@@ -13,10 +13,7 @@ I think to better understand and grasp of concurrency programming, the first que
 
 Here is one definition from JCIP:
 
-	  A class is thread‐safe if it behaves __correctly__ when accessed from multiple threads, 
-	regardless of the scheduling or interleaving of the execution of those threads by 
-	the runtime environment, and with no additional synchronization or other coordination 
-	on the part of the calling code.
+A class is thread‐safe if it behaves __correctly__ when accessed from multiple threads, regardless of the scheduling or interleaving of the execution of those threads by the runtime environment, and with no additional synchronization or other coordination on the part of the calling code.
 
 From the previous definition of thread-safe, the core to be thread safe is correctness, so __what is the correctness of class__? 
 
