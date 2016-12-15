@@ -29,6 +29,14 @@ categories: progress following
 
 - Object Design: Roles, Responsibilities, and Collaborations (Rebecca Wirfs-Brock, Alan McKean)
 
+- Patterns, Principles, and Practices of Domain-Driven Design 
+
+
+#### Architecture
+- Technical leadership and the balance with agility [https://leanpub.com/software-architecture-for-developers/read]
+- Just Enough Software Architecture: A Risk-Driven Approach [https://www.amazon.com/gp/product/0984618104]
+- Document Software Architecture 
+
 #### Papers
 - F. Brooks: No Silver Bullet - Essense and accident in software engineering (1986) ， and yes, it is foreteller and it is philosophy. 
 
@@ -66,6 +74,9 @@ Read this first https://dancres.github.io/Pages/
 
 ## Ebook download websit
 - https://gist.github.com/zjhiphop/434eb7bf491a711ebc07
+## Online Book store
+- https://leanpub.com/bookstore
+- www.amazon.com
 
 
 

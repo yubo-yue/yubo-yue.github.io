@@ -18,3 +18,10 @@ categories: coding, coder convention, code review
 - DIP (dependency injection)
 - Interface Segregation Principle (ISP)
 - 
+
+## Design Patterns
+
+
+## References
+
+1. https://sourcemaking.com/design_patterns/abstract_factory Design Pattern
