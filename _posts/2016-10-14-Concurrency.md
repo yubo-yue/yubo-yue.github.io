@@ -58,7 +58,7 @@ There are two way to design thread-safe class, or more broad speaking, design co
 One is using synchroniztion to prevent multiple threads from accessing the same data at the same time; 
 The other is how to share and publish object can be accessed safely by multiple threads at the same time.
 
-*** Below all about visibility of shared states***
+* Below all about visibility of shared states
 
 ### Stale Data (visibility issue)
 
@@ -87,7 +87,7 @@ Even can't meet the requirement of __out-of-thin-air safety__.
 	registers or in caches where they are hidden from other processors, so a read of 
 	a volatile variable always returns the most recent write by any thread.
 
-What is more:
+_What is more:_
 	
 	The visibility effects of volatile variables extend beyond the value of 
 	the volatile variable itself. When thread A writes to a volatile variable and 
@@ -96,7 +96,7 @@ What is more:
 	B after reading the volatile variable.
 
 
-At last, you remember that:
+_At last, you remember that:_
 
 	Locking can guarantee both visibility and atomicity; 
 	volatile variables can only guarantee visibility.
@@ -111,7 +111,7 @@ At last, you remember that:
 
 ### So how to publish in safe way? or what is an safe publication way?
 
-*** Safe Construction Practises
+_Safe Construction Practises_
 	
 	Don't allow this reference to escape during construction.
 
@@ -127,14 +127,14 @@ At last, you remember that:
 ### Thread confinement
 	Stack confinement or ThreadLocal confinement 
 
-*** Stack Confinement 
+_Stack Confinement_ 
 	
 	Stack confinement is a special case of thread confinement in which an object 
 	can only be reached through local variables. Just as encapsulation can make 
 	it easier to preserve invariants, local variables can make it easier to confine 
 	objects to a thread.
 
-*** ThreadLocal
+_ThreadLocal_
 	
 ## Immutability
 
@@ -181,11 +181,6 @@ Making a class thread-safe means ensuring that its invariants hold under concurr
 ### Synchronized Collection and Concurrent Collections
 
 ### How is ConcurrentHashMap implemented?
-
-
-## Java Memory Model
-
-## Java ByteCode
 
 
 
