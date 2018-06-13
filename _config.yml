@@ -11,14 +11,12 @@ future: true
 
 port: 4004
 
-#highlight code syntax
-#highlighter: pygments
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
+show_drafts: false
+
 kramdown:
   input: GFM
-
-#gems: [jekyll-paginate]

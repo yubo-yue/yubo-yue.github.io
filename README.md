@@ -18,6 +18,9 @@ gem update jekyll
 
 Jekyll server
 
+# with draft support
+jekyll server --draft
+
 
 jekyll build
 # => The current folder will be generated into ./_site
