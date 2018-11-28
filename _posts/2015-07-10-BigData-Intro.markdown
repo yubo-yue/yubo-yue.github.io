@@ -41,7 +41,14 @@ Enable multiple frameworks to share same cluster resources (eg Hadoop, Storm , S
     2. low-latency large-scale task scheduler
     3. Powerful prog model and APIs: Java, Python, Scala
 
-## 参考资料
+    
+## Fancy Terms, Technologies, Concepts
+- Lambda Architecture [How to beat the cap theorem](http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html)
+- Questioning Lambda Architecture [link](https://www.oreilly.com/ideas/questioning-the-lambda-architecture)
+- Jay Krep's Kappa Architecture [link](http://milinda.pathirage.org/kappa-architecture.com/)
+- Jay Krep's Log what every software engineer should know about real time datas unifying [link](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+
+## References
 1. http://datasys.cs.iit.edu/events/CCGrid2014/CCGrid-May25-Stoica.pdf - from BDAS, very good introduction material
 
 
