@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "All about micro service"
+title:  "All about Crytography"
 date: 2018-11-23 01:12:13
 categories: Cryptograhpy, Cipher, Security, web security
 ---
@@ -67,5 +67,3 @@ Confidentiality, Integrity and Availability.
 
 ## OAuth 2.0 and OpenID Connect
 OAuth 2.0 is a delegation protocol, a mean of letting someone who control a resources allow a software application to access that resources on their behalf without impersonating them.
-
-
