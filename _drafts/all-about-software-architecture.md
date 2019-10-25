@@ -25,6 +25,76 @@ Copied from [The Agile Inception Desk](https://agilewarrior.wordpress.com/2010/1
 	- Be clear on what's going to give. (Trade-off slider)
 	- Show what it's going to give. (construction|UAT|Training|Ship it)
 
+## Architecting for Scaling
+
+- Reliability : The ability of your system to perform the operations it is intended to perform w/o making a mistake
+- Availability: The ability of your system to be operational when needed in order to perform those operations.
+
+### What causes poor Availability?
+- Resource Exhaustion
+- Unplanned load-based changes
+- Increase number of moving parts
+- Outside Dependencies
+- Technical Debt.
+
+### Five Focuses to Improve Application Availability
+- Build with failure in mind
+- Always think about scaling
+- Mitigate risk
+  - There is risk that a server will crash
+  - There is risk that a database will become corrupted
+  - There is risk that a returned answer will be incorrect
+  - There is risk that a network connection will fail
+  - There is risk that a newly deployed piece of software will fail.
+- Monitor Availability
+- Respond to availability issues in a predictable and defined way.
+
+#### Risk Management
+What your risk is? How much risk is acceptable? what can you do to mitigate risk?
+- Risk Categorization (Likelihood/Severity - Low Medium and High)
+	- H/H
+	- L/H
+	- H/H
+	- L/L
+- Risk Matrix (How to manage risks)
+- Risk Mitigation : Risk Mitigation is about reducing the impact of a risk by either reducing the likelihood that the risk will occur, or reducing the severity of the problem if the risk does occur.
+
+### Building systems with Reduced Risk
+
+#### Redundancy
+- Design your application so that it can run on multiple independent hardware components simultaneously.
+- Design your application so that can run task independently.
+- Design your application so that can run task asynchronously.
+- Localize state into specific areas. 
+- Utilize idempotent interfaces wherever possible.
+- Downsides
+	- Redundancy improvements that increase Complexity.
+
+#### Independence
+Multiple components utilizing shared capabilities or components may present themselves as independent components, but in fact, they are all dependent on a common component. 
+
+#### Security
+Bad actors have always been a problem in software systems. Security and security monitoring has always been a part of building systems.
+
+#### Simplicity
+
+#### Self-Repair
+LoadBalancer, "Hot Standby" Database instance, Retry, queue system, etc....
+
+#### Operation Process
+Humans are involved in our software systems and humans make mistakes. The more you can automate the processes that humans normally perform in your production systems, the fewer mistakes that can be introduced and the higher the likelihood that the tasks will work. 
+
+
+## Scalability Rules : 50 Principles for Scaling web sites
+
+### Rule 37 - Never trust Single Points of Failure
+
+### Rule 46 - Be wary of Scaling through Third party
+* Why : Own your destiny, keep your architecture simple and reduce your total cost of ownership.
+
+### Rule 47 - Purge, Archive and Cost-Justify Storage
+* RFM - Recency, Frequency, Monetization...
+
 ## Patterns
 
 ### Definitions

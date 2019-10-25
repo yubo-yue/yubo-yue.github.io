@@ -31,3 +31,11 @@ Put it here in order whenever i am stuck in some situation, hopefully can get in
 9. Simplify and Think Big is conflict, tradeoff come to rescue. Think big regards vision of future, simplify and invent regard the path to future.
 10. "Divide and Conquer" is good strategy.
 11. Policy and Mechanism separation. 
+
+
+# Agile - 3 Simple Truths
+
+1. It is impossible to collect all requirements at beginning of projects
+2. Whatever requirements you do gather are guranteed to change.
+3. There always will be more to do than time and money will allow.
+
