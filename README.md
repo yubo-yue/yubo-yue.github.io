@@ -16,7 +16,7 @@ gem search jekyll --remote
 # update jekyll
 gem update jekyll
 
-Jekyll server
+jekyll server
 
 # with draft support
 jekyll server --draft

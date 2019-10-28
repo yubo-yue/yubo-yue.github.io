@@ -8,7 +8,17 @@ categories: Microservice
 # Overivew
 This page is all about Microservice. 
 
-- What is microservice?
+## What is microservice?
+It is Small, and focus on and only one functionality. Next question is how small is small enough? The rule of thumb is we can rewrite one service in two weeks. 
+
+Its pros:
+* Technology heterogeneous
+* Resilience of fault
+* Scaling in finer granularity
+* Ease of deployment
+* Organization alignment
+* Composability
+* Optimization for replaceability 
 
 - What is the difference/relationship between SOA and Microservice?
 
@@ -18,8 +28,12 @@ This page is all about Microservice.
 
 
 # Service Mesh
+The concept of using service mesh to manage service-to-service communication within a cluster burst onto the scene back in 2016, driven partly by the hype-driven adoption of microservice-based architectures, and also the acceptance of Kubernetes as the de facto way to run containers. 
 
-- What/Why/How 
+## Service Mesh control plane and data plane
+https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc?gi=21fd4a17122
+
+The initial microservices maxim of creating "smart endpoints and dumb pipes" has now evolved, and service meshes are vying to put just enough smart back into the piples. 
 
 
 # CNCF
