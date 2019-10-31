@@ -8,6 +8,15 @@ categories: java thread concurrency
 ## Overview
 There is a long journey to get accustom of Java thread and concurrency. The main reason is find a great book on this topic is quite hard. Even though there are a lot of book try to clarify this topic directly by using easy understanding words, but few can do that. Brian Goetz's __Java Concurrency in Practice(JCIP)__ is one of the winner who describe this topic so well, with enough depth on concurrency scope.
 
+## Risks of thread
+* Saftty hazards - no bad things happen
+* Liveness hazards - good thing eventually happen
+* Performance hazards - good thing to happen quickly.
+
+### Thread safefy
+Writing thread‐safe code is, at its core, about managing access to state, and in particular to shared, mutable state.
+
+
 ## What is definition of thread safe class? 
 I think to better understand and grasp of concurrency programming, the first question you should ask yourself is What is thread safe?.  If you can't give out a clear answer for this question, i don't think you can write a correct and efficient java concurrent program because you are lost at the beginning. 
 
@@ -17,14 +26,11 @@ A class is thread‐safe if it behaves __correctly__ when accessed from multiple
 
 From the previous definition of thread-safe, the core to be thread safe is correctness, so __what is the correctness of class__? 
 
-	Correctness means that a class conforms to its specification. A good specification 
-	defines invariants constraining an object's state and post‐conditions describing 
-	the effects of its operations.
+	Correctness means that a class conforms to its specification. A good specification defines invariants constraining an object's state and post‐conditions describing the effects of its operations.
 
 So at the end, what a thread-safe class can help u???
 
-	Thread‐safe classes encapsulate any needed synchronization so that clients need not 
-	provide their own.
+	Thread‐safe classes encapsulate any needed synchronization so that clients need not provide their own.
 
 ## Atomicity 
 
@@ -34,9 +40,7 @@ So at the end, what a thread-safe class can help u???
 
 * Race condition, what is it ?
 
-	A race condition occurs when the correctness of a computation depends on the relative 
-	timing or interleaving of multiple threads by the runtime; in other words, when getting 
-	the right answer relies on lucky timing.
+	A race condition occurs when the correctness of a computation depends on the relative timing or interleaving of multiple threads by the runtime; in other words, when getting the right answer relies on lucky timing.
 
 
 * Race condition type
@@ -49,14 +53,12 @@ Lock is one method to solve race condition by make non-atomic operation to be at
 
 ## Liveness and Performance - synchronization is not the only concern
 
-	There is frequently a tension between simplicity and performance. When implementing
-	 a synchronization policy, resist the temptation to prematurely sacrifice simplicity
-	  (potentially compromising safety) for the sake of performance.
+	There is frequently a tension between simplicity and performance. When implementing a synchronization policy, resist the temptation to prematurely sacrifice simplicity (potentially compromising safety) for the sake of performance.
 
 ## Sharing Objects
 There are two way to design thread-safe class, or more broad speaking, design correct concurrent program. Atucally, there are two primary ways:
-One is using synchroniztion to prevent multiple threads from accessing the same data at the same time; 
-The other is how to share and publish object can be accessed safely by multiple threads at the same time.
+* One is using synchroniztion to prevent multiple threads from accessing the same data at the same time; 
+* The other is how to share and publish object can be accessed safely by multiple threads at the same time.
 
 * Below all about visibility of shared states
 
@@ -79,13 +81,7 @@ Even can't meet the requirement of __out-of-thin-air safety__.
 
 ### What is volatile keyword used for?
 
-	The Java language also provides an alternative, weaker form of synchronization, 
-	volatile variables, to ensure that updates to a variable are propagated predictably 
-	to other threads. When a field is declared volatile, the compiler and runtime are 
-	put on notice that this variable is shared and that operations on it should not 
-	be reordered with other memory operations. Volatile variables are not cached in 
-	registers or in caches where they are hidden from other processors, so a read of 
-	a volatile variable always returns the most recent write by any thread.
+	The Java language also provides an alternative, weaker form of synchronization,  volatile variables, to ensure that updates to a variable are propagated predictably to other threads. When a field is declared volatile, the compiler and runtime are put on notice that this variable is shared and that operations on it should not be reordered with other memory operations. Volatile variables are not cached in registers or in caches where they are hidden from other processors, so a read of a volatile variable always returns the most recent write by any thread.
 
 _What is more:_
 	
@@ -98,8 +94,7 @@ _What is more:_
 
 _At last, you remember that:_
 
-	Locking can guarantee both visibility and atomicity; 
-	volatile variables can only guarantee visibility.
+	Locking can guarantee both visibility and atomicity; volatile variables can only guarantee visibility.
 
 ## Publication and Escape
 

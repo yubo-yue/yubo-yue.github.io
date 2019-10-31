@@ -35,6 +35,9 @@ https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc
 
 The initial microservices maxim of creating "smart endpoints and dumb pipes" has now evolved, and service meshes are vying to put just enough smart back into the piples. 
 
+## The majestic monolith
+https://m.signalvnoise.com/the-majestic-monolith/
+
 
 # CNCF
 - (CNCF)[https://www.cncf.io/]. 
