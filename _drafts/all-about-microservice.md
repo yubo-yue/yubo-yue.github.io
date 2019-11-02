@@ -35,8 +35,22 @@ https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc
 
 The initial microservices maxim of creating "smart endpoints and dumb pipes" has now evolved, and service meshes are vying to put just enough smart back into the piples. 
 
+# The way to micro service / service mesh
+- monolith (Big Ball of Mud BBoM)
+- modular monolith
+- distrisbuted monolith
+- micro-service
+- service mesh --> it is the future??
+
+Two perspective to see them:
+- Modularity
+- Deployment Units
+
 ## The majestic monolith
 https://m.signalvnoise.com/the-majestic-monolith/
+
+## See how spotify doing 
+Scaling Agile @ Spotify - https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf
 
 
 # CNCF
