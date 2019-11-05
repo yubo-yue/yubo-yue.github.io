@@ -129,6 +129,4 @@ jstat -options
 	-gcutil
 	-printcompilation
 
-
-
 ```
