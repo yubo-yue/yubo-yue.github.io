@@ -59,6 +59,9 @@ Scaling Agile @ Spotify - https://blog.crisp.se/wp-content/uploads/2012/11/Spoti
 
 # K8S, ....
 
+# References
+* [From Microliths to Microsystems: Jonas Bonér at QCon London](https://www.infoq.com/news/2017/03/microliths-microsystems)
+
 
 
 
