@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "all about simple design of kent beck"
+title:  "all about simple design of kent beck, and beyond"
 ---
 
 # Kent Beck's simple design rule

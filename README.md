@@ -4,7 +4,19 @@ Yubo's own knowledge Base
 http://jekyllrb.com/docs/usage/ is about how to deploy and test locally.
 
 ```
+# install ruby by rbenv
+# update brew latest formula
+brew update && brew upgrade ruby-build  
+
+# see all ruby available version list
+rbenv install --list
+
+# install latest ruby from rbenv
+rbenv install 2.6.5
+
 # 
+
+
 jekyll --version
 
 # list local gem for jekyll 

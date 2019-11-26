@@ -118,7 +118,7 @@ Pattern is not invented, actually it is discovered. So the important thing is ho
 10. Variants
 11. Known Uses
 12. Consequences
-13. See Also 
+13. See Also
 
 
 ## Templates

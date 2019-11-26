@@ -57,7 +57,11 @@ Scaling Agile @ Spotify - https://blog.crisp.se/wp-content/uploads/2012/11/Spoti
 - (CNCF)[https://www.cncf.io/]. 
 
 
-# K8S, ....
+# K8S
+
+# What is service mesh?
+service mesh provided policy-based, network services for network connnected workload 
+
 
 # References
 * [From Microliths to Microsystems: Jonas Bonér at QCon London](https://www.infoq.com/news/2017/03/microliths-microsystems)
