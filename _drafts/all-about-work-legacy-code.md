@@ -34,3 +34,12 @@ Optimization is like refactoring. but when we do it, we have different goals.
 ### to summarize
 In general, there are 3 things can change when we do work in system: functionality, structure and resource usage.
 
+## Concepts
+
+* Change point
+* Interception point
+* Pinch point
+* Effect sketch 
+
+## Dependency breaking techniques
+
