@@ -9,4 +9,8 @@ categories: Architecture Data intensive Application, Distributed System
 The paper is for understanding of core abstraction and theory in distributed system domain.
 
 # Consistency and Consensus
+
+## Linearizability
+It is for recency guaranteed. Behave as though there is only a single copy of data, and all operations are atomic on it. 
+
  
