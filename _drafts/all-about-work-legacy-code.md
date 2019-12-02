@@ -40,6 +40,19 @@ In general, there are 3 things can change when we do work in system: functionali
 * Interception point
 * Pinch point
 * Effect sketch 
+## This class is too big and Can't get bigger
+
+This is most useful tips i feel in this book. Heuristics:
+
+* See Responsiblities
+  * Group Methods
+  * Look at Hidden method
+  * Look for Decision that can be changed
+  * Look for internal relationship 
+    * Feature sketching
+  * Look for the Primary Responsiblity
+    * Try to write one sentence for its primary responsibility.
+
 
 ## Dependency breaking techniques
 
