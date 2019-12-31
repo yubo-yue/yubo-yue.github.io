@@ -102,6 +102,9 @@ Scaling Agile @ Spotify - https://blog.crisp.se/wp-content/uploads/2012/11/Spoti
 * UUID
 * Facebook snowflake algorithm 
 
+## In Amazon, Envoy is used in ECS App Mesh as the proxy implementation?
+See Werner Vogels' [article](https://www.allthingsdistributed.com/2019/03/redefining-application-communications-with-aws-app-mesh.html) first. 
+
 
 
 
