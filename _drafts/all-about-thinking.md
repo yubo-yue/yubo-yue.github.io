@@ -39,3 +39,6 @@ Put it here in order whenever i am stuck in some situation, hopefully can get in
 2. Whatever requirements you do gather are guranteed to change.
 3. There always will be more to do than time and money will allow.
 
+# Good topics
+1. Simple Made Ease - https://www.infoq.com/presentations/Simple-Made-Easy/
+
