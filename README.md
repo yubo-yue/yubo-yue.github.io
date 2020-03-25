@@ -1,7 +1,9 @@
-# yubo-yue.github.io
-Yubo's own knowledge Base
+Personal home page: yubo-yue.github.io.
 
-http://jekyllrb.com/docs/usage/ is about how to deploy and test locally.
+Static website builder: http://jekyllrb.com/docs/usage/ is about how to deploy and test locally.
+
+markdown dialect, https://kramdown.gettalong.org/
+
 
 ```
 # install ruby by rbenv
