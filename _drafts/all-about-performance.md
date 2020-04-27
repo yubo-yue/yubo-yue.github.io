@@ -21,3 +21,9 @@ Brendang is the author of FlameGraph and [System Performance: Enterprise and The
 ## linux Performance tools
 ![Decision Making context](../pic/linux_perf_tools_full.png) 
 
+## Java Performance tuning
+[Raw tips](http://www.javaperformancetuning.com/tips/rawtips.shtml)
+[Tools](http://fasterj.com/tools/heapdumpanalysers.shtml)
+
+137387933
+

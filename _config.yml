@@ -21,4 +21,4 @@ show_drafts: false
 kramdown:
   input: GFM
 
-theme: jekyll-theme-architect
+  #theme: jekyll-theme-architect

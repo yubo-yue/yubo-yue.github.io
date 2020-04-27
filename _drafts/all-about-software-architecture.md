@@ -125,3 +125,4 @@ Pattern is not invented, actually it is discovered. So the important thing is ho
 
 - [SEI View and Beyond](http://www.iso-architecture.org/42010/applications.html)
 - [Architecture Template](http://www.iso-architecture.org/42010/templates/)
+- Azure architecture framework https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency
