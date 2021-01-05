@@ -180,6 +180,12 @@ There is a "Scaling Operational Load" working group in AWS that is working with 
 
 ## Microservice
 
+https://martinfowler.com/articles/microservices.html
+
+https://smi-spec.io/
+
+
+
 ## Service Mesh
 
 Service meshes provide policy-based, network services for network-connected workloads by enforcing desired behavior of the network in the face of constantly changing conditions and topology. Conditions that change can be load, configuration, resources (including those affecting infrastructure and application topology of intracluster and intercluster resources coming and going), and workloads being deployed.
