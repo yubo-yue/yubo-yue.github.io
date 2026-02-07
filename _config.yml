@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://yubo-yue.github.io"
 
 
-#paginate: 20
+paginate: 20
 future: true
 
 port: 4004
@@ -22,3 +22,8 @@ kramdown:
   input: GFM
 
   #theme: jekyll-theme-architect
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
