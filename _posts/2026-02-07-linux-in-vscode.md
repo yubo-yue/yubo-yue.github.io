@@ -105,13 +105,15 @@ docker-compose exec kernel-dev bash
 ```sh
 # 配置内核
 # make x86_64_defconfig
-#或者，如果上面命令有问题，则执行
-# 你运行 make x86_64_defconfig 时，内核去 arch/x86_64/configs/ 目录下找这个文件，但实际上那个年代这个文件的名字并不叫 x86_64_defconfig，而是直接叫 defconfig。
-#（直到后来的 2.6.2x 版本，内核才把 i386 和 x86_64 合并成统一的 arch/x86，并规范了 defconfig 的命名。）
+# 或者，如果上面命令有问题，则执行
+# 你运行 make x86_64_defconfig 时，内核去 arch/x86_64/configs/ 目录下找这个文件，
+# 但实际上那个年代这个文件的名字并不叫 x86_64_defconfig，而是直接叫 defconfig。
+# 直到后来的 2.6.2x 版本，内核才把 i386 和 x86_64 合并成统一的 arch/x86，
+# 并规范了 defconfig 的命名。
 make ARCH=x86_64 defconfig
-
+make ARCH=x86_64 menuconfig
 # 如果你想精简内核或开启调试符号，可以用 menuconfig (需要调整终端大小)
-# make menuconfig 
+# make menuconfig
 
 # 开始全量编译
 make -j$(nproc)
