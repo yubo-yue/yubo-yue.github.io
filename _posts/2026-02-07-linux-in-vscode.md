@@ -97,9 +97,13 @@ echo "Done. Now you can run 'make x86_64_defconfig'"
 ```
 
 在linux的上层目录workspace下，运行docker-compose
+
 ```sh
 docker-compose up -d
 docker-compose exec kernel-dev bash
+
+# 停止 docker容器
+docker-compose stop
 ```
 在容器内执行
 ```sh
