@@ -10,4 +10,39 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     {% feed_meta %}
     {% seo %}
+
 </head>
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // 1. 找到所有声明为 mermaid 的代码块
+    // kramdown 通常会给 code 加上 .language-mermaid
+    const mermaidBlocks = document.querySelectorAll('.language-mermaid');
+
+    mermaidBlocks.forEach((block) => {
+      // 获取代码实际内容（去除多余转义）
+      const code = block.innerText;
+      
+      // 创建一个新的 div 用来渲染图表
+      const renderDiv = document.createElement('div');
+      renderDiv.className = 'mermaid';
+      renderDiv.textContent = code;
+
+      // 2. 寻找最外层的容器（通常是 .highlighter-rouge）并替换它
+      const container = block.closest('.highlighter-rouge') || block.closest('pre');
+      if (container) {
+        container.parentNode.insertBefore(renderDiv, container);
+        container.remove();
+      }
+    });
+
+    // 3. 初始化 Mermaid
+    mermaid.initialize({ 
+      startOnLoad: true,
+      theme: 'default' // 可选: 'dark', 'forest', 'neutral'
+    });
+  });
+</script>
+
